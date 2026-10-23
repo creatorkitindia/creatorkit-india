@@ -3,171 +3,197 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#090711">
-<title>CreatorKit India | Official Creator Tools</title>
-<meta name="description" content="Free creator tools for bios, usernames and captions by CreatorKit India.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080611">
+<title>CreatorKit India | Rama Raman Singh</title>
 <style>
-:root{--bg:#090711;--panel:#151020;--purple:#b76cff;--pink:#ed75ff;--text:#faf7ff;--muted:#b2a7c3;--border:#342447}
+:root{--bg:#080611;--purple:#a855f7;--pink:#e879f9;--white:#faf7ff;--muted:#b9accd}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:radial-gradient(ellipse at top,#291344 0%,var(--bg) 48%);color:var(--text);font-family:system-ui,-apple-system,Arial,sans-serif;line-height:1.6}
-.container{width:min(100% - 32px,960px);margin:auto}
-header{position:sticky;top:0;z-index:5;background:#090711ed;border-bottom:1px solid var(--border);backdrop-filter:blur(14px)}
-.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.brand{display:flex;flex-direction:column;line-height:1.25}
-.logo{font-size:20px;font-weight:850;letter-spacing:-.6px}
-.logo span{background:linear-gradient(90deg,#c084fc,#f0abfc);-webkit-background-clip:text;background-clip:text;color:transparent}
-.founder-label{margin-top:6px;color:#c084fc;font-size:8px;font-weight:800;letter-spacing:2px}
-.founder-name{margin-top:2px;font-family:Georgia,"Times New Roman",serif;font-size:14px;font-weight:600;letter-spacing:.5px;background:linear-gradient(90deg,#fff0ce,#d8b4fe);-webkit-background-clip:text;background-clip:text;color:transparent}
-.founder-tagline{margin-top:3px;color:#91859f;font-size:8px;letter-spacing:1.4px}
-.nav-link{font-size:12px;color:#e0c9ff;text-decoration:none;border:1px solid #49305f;border-radius:99px;padding:8px 11px}
-.hero{text-align:center;padding:65px 0 40px}
-.tag{display:inline-block;padding:6px 12px;border:1px solid #674095;background:#a855f71b;color:#e0c2ff;border-radius:99px;font-size:11px;font-weight:750;letter-spacing:.6px}
-h1{font-size:clamp(38px,9vw,68px);line-height:1.06;letter-spacing:-2px;margin:22px 0 16px}
-.gradient{background:linear-gradient(90deg,#c084fc,#f0abfc,#fb7185);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{max-width:540px;margin:0 auto;color:var(--muted);font-size:15px}
-button{border:0;border-radius:12px;padding:12px 16px;background:linear-gradient(100deg,#9333ea,#c026d3);color:white;font-size:14px;font-weight:750;cursor:pointer;box-shadow:0 0 20px #a855f744}
-button:active{transform:scale(.98)}
-.hero-btn{display:inline-block;text-decoration:none;margin-top:25px}
-.section-title{font-size:24px;letter-spacing:-.5px;margin:24px 0 5px}
-.section-sub{color:var(--muted);font-size:14px;margin:0 0 20px}
-.tools{display:grid;grid-template-columns:1fr;gap:16px;padding-bottom:48px}
-.card{background:linear-gradient(145deg,#1b1429,#100d19);border:1px solid var(--border);border-radius:20px;padding:21px;box-shadow:0 10px 35px #0003}
-.card:focus-within,.card:hover{border-color:#8950b9}
-.card-head{display:flex;align-items:center;gap:12px;margin-bottom:13px}
-.tool-icon{width:46px;height:46px;flex-shrink:0;display:grid;place-items:center;border-radius:14px;background:#a855f71c;font-size:23px}
-h2{font-size:19px;margin:0}
-.card p{color:var(--muted);font-size:13px;margin:3px 0 15px}
-label{display:block;font-size:13px;color:#ddd5ed;margin:12px 0 6px}
-input,select{width:100%;padding:13px 14px;border:1px solid #3a2d4e;border-radius:12px;background:#0c0a13;color:var(--text);font:inherit;font-size:14px;outline:none}
-input:focus,select:focus{border-color:var(--purple)}
-.generate{width:100%;margin-top:13px}
-.result{display:none;margin-top:14px;padding:14px;border-radius:12px;background:#090711;border:1px solid #49385f;overflow-wrap:anywhere;white-space:pre-line;font-size:14px}
-.result.show{display:block}
-.copy-btn{margin-top:12px;background:#282035;border:1px solid #49385f;box-shadow:none}
-.tip-list{padding-left:20px;color:#d4cde1;font-size:14px}
-.tip-list li{margin:10px 0}
-footer{text-align:center;padding:28px 16px 35px;border-top:1px solid var(--border);color:var(--muted);font-size:12px}
-.footer-brand{align-items:center}
-@media(min-width:650px){.tools{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding-top:85px}.logo{font-size:23px}}
+body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 50% 25%,#7228b633,transparent 50%),radial-gradient(ellipse at 5% 90%,#8b5cf626,transparent 35%)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 7%;border-bottom:1px solid #ffffff14}
+.brand{font-size:20px;font-weight:800}.brand span{color:var(--pink)}
+nav a{color:#e9d5ff;text-decoration:none;font-size:14px}
+.hero{min-height:82vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:65px 20px;position:relative;isolation:isolate}
+.glow{position:absolute;width:260px;height:260px;border-radius:50%;background:#a855f72c;filter:blur(65px);z-index:-1;animation:breathe 5s ease-in-out infinite}
+.tag{font-size:11px;font-weight:bold;letter-spacing:4px;color:#e9b8ff;border:1px solid #b76cff66;background:#a855f715;border-radius:30px;padding:10px 16px;animation:up 1s both}
+h1{font-size:clamp(38px,8vw,78px);letter-spacing:-2.5px;line-height:1.12;margin:26px 0 17px;background:linear-gradient(100deg,#fff,#e9b8ff,#a855f7,#fff);background-size:250% auto;color:transparent;background-clip:text;-webkit-background-clip:text;filter:drop-shadow(0 0 22px #a855f733);animation:up 1s .15s both,shine 7s linear infinite}
+.intro{max-width:540px;color:var(--muted);line-height:1.8;font-size:16px;animation:up 1s .3s both}
+.signature{margin-top:27px;letter-spacing:4px;font-size:11px;font-weight:bold;color:#d8b4fe;animation:up 1s .4s both}
+.signature span{color:var(--pink)}
+.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px;animation:up 1s .5s both}
+.btn{display:inline-block;text-decoration:none;padding:14px 20px;border-radius:12px;font-size:14px;font-weight:bold;transition:.25s}
+.btn:hover{transform:translateY(-3px)}
+.primary{background:linear-gradient(110deg,#7e22ce,#c026d3);color:white;box-shadow:0 5px 25px #a855f735}
+.secondary{border:1px solid #ffffff2b;color:#f3e8ff;background:#ffffff08}
+.section{max-width:1100px;margin:auto;padding:55px 7%}
+.section h2{text-align:center;font-size:30px;margin:0 0 10px;letter-spacing:-1px}
+.desc{text-align:center;color:var(--muted);margin:0 0 30px;line-height:1.7}
+.tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.card{padding:23px;border-radius:19px;border:1px solid #ffffff16;background:linear-gradient(145deg,#1b1329,#100c19);transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);border-color:#a855f766}
+.card h3{margin:0 0 8px;font-size:19px}
+.card p{color:var(--muted);font-size:14px;line-height:1.65}
+label{display:block;color:#e9d5ff;font-size:13px;margin:14px 0 7px}
+input,select,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #ffffff24;background:#0b0813;color:white;font:inherit;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--purple)}
+select option{background:#151020}
+textarea{resize:vertical;min-height:80px}
+.toolbtn{width:100%;margin-top:13px;padding:12px;border:0;border-radius:10px;background:linear-gradient(100deg,#7e22ce,#a855f7,#c026d3);color:white;font-weight:bold;cursor:pointer}
+.output{display:none;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;margin-top:13px;padding:13px;background:#09070f;border:1px solid #a855f755;border-radius:10px;font-size:14px}
+.tips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.tip{border:1px solid #ffffff16;background:#ffffff06;padding:19px;border-radius:15px}
+.tip b{display:block;margin-bottom:9px}
+.tip p{font-size:13px;line-height:1.7;margin:0}
+footer{text-align:center;padding:34px 15px 28px;border-top:1px solid #ffffff16;color:var(--muted);font-size:13px;line-height:1.9}
+.footname{font-weight:bold;color:#e9b8ff;letter-spacing:1px;font-size:16px}
+.crafted{font-size:10px;letter-spacing:3px;color:#c084fc;margin-top:5px}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes shine{to{background-position:250% center}}
+@keyframes breathe{0%,100%{transform:scale(.9);opacity:.6}50%{transform:scale(1.15);opacity:1}}
+@media(max-width:650px){nav{padding:17px 5%}.brand{font-size:17px}.hero{min-height:75vh;padding:55px 18px}h1{letter-spacing:-1.5px}.section{padding:40px 5%}.tools,.tips{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<header>
-<div class="container nav">
-  <div class="brand">
-    <div class="logo">CreatorKit <span>India</span></div>
-    <div class="founder-label">FOUNDER &amp; CREATOR</div>
-    <div class="founder-name">Rama Raman Singh</div>
-    <div class="founder-tagline">CRAFTED WITH VISION ✦</div>
-  </div>
-  <a class="nav-link" href="#tools">Explore Tools ↓</a>
-</div>
-</header>
+<nav>
+  <div class="brand">CreatorKit <span>India</span></div>
+  <a href="#tools">Explore Tools ↗</a>
+</nav>
 
-<main class="container">
+<main>
 <section class="hero">
-  <span class="tag">✦ FREE TOOLS FOR CREATORS</span>
-  <h1>Create more.<br><span class="gradient">Stand out.</span></h1>
-  <p>Make your creator profile shine with stylish bios, unique usernames and captions — all in one place.</p>
-  <a class="hero-btn" href="#tools"><button type="button">Explore Free Tools ↗</button></a>
+  <div class="glow"></div>
+  <div class="tag">FOUNDER &amp; CREATOR</div>
+  <h1>Rama Raman Singh</h1>
+  <p class="intro">Turning creative ideas into something extraordinary. Welcome to CreatorKit India — your space to create, grow and stand out.</p>
+  <div class="signature">CRAFTED WITH VISION <span>✦</span></div>
+  <div class="buttons">
+    <a class="btn primary" href="#tools">Explore Creator Tools ↗</a>
+    <a class="btn secondary" href="#about">Our Vision</a>
+  </div>
 </section>
 
-<section id="tools">
-  <h2 class="section-title">Your Creator Toolkit ✨</h2>
-  <p class="section-sub">Simple, free tools to spark your next idea.</p>
+<section class="section" id="tools">
+  <h2>Your Creator Toolkit</h2>
+  <p class="desc">Simple tools. Fresh ideas. More creativity.</p>
   <div class="tools">
-    <article class="card">
-      <div class="card-head"><div class="tool-icon">✍️</div><div><h2>Bio Generator</h2><p style="margin:2px 0">Find your profile vibe</p></div></div>
-      <label for="bioStyle">Choose your style</label>
-      <select id="bioStyle"><option value="attitude">Attitude</option><option value="aesthetic">Aesthetic</option><option value="simple">Simple</option><option value="creator">Content Creator</option></select>
-      <button class="generate" onclick="generateBio()">Generate Bio ✨</button>
-      <div class="result" id="bioResult" aria-live="polite"></div>
-    </article>
+    <div class="card">
+      <h3>✍️ Bio Generator</h3>
+      <p>Create a bio that matches your personality.</p>
+      <label for="bioName">Your name</label>
+      <input id="bioName" placeholder="e.g. Rama">
+      <label for="bioStyle">Choose a style</label>
+      <select id="bioStyle"><option>Cool</option><option>Aesthetic</option><option>Professional</option><option>Motivational</option></select>
+      <button class="toolbtn" onclick="makeBio()">Generate Bio</button>
+      <div class="output" id="bioOut"></div>
+      <button class="toolbtn" id="bioCopy" hidden onclick="copyText('bioOut')">Copy Bio</button>
+    </div>
 
-    <article class="card">
-      <div class="card-head"><div class="tool-icon">⚡</div><div><h2>Username Ideas</h2><p style="margin:2px 0">Find your next handle</p></div></div>
+    <div class="card">
+      <h3>⚡ Username Ideas</h3>
+      <p>Discover new username ideas for your profile.</p>
       <label for="userWord">Name or keyword</label>
-      <input id="userWord" maxlength="24" placeholder="e.g. Rama, gamer, artist">
-      <button class="generate" onclick="generateUsername()">Generate Usernames ✨</button>
-      <div class="result" id="userResult" aria-live="polite"></div>
-    </article>
+      <input id="userWord" placeholder="e.g. Raman">
+      <button class="toolbtn" onclick="makeUsers()">Generate Usernames</button>
+      <div class="output" id="userOut"></div>
+      <button class="toolbtn" id="userCopy" hidden onclick="copyText('userOut')">Copy Ideas</button>
+    </div>
 
-    <article class="card">
-      <div class="card-head"><div class="tool-icon">💬</div><div><h2>Caption Generator</h2><p style="margin:2px 0">Give your post a voice</p></div></div>
-      <label for="captionStyle">Choose a mood</label>
-      <select id="captionStyle"><option value="attitude">Attitude</option><option value="happy">Positive vibes</option><option value="aesthetic">Aesthetic</option><option value="motivation">Motivation</option></select>
-      <button class="generate" onclick="generateCaption()">Generate Caption ✨</button>
-      <div class="result" id="captionResult" aria-live="polite"></div>
-    </article>
+    <div class="card">
+      <h3>📸 Caption Generator</h3>
+      <p>Find a caption for your next post.</p>
+      <label for="topic">Post topic</label>
+      <input id="topic" placeholder="e.g. Friends, travel, success">
+      <label for="captionStyle">Choose a vibe</label>
+      <select id="captionStyle"><option>Attitude</option><option>Aesthetic</option><option>Funny</option><option>Motivational</option></select>
+      <button class="toolbtn" onclick="makeCaption()">Generate Caption</button>
+      <div class="output" id="captionOut"></div>
+      <button class="toolbtn" id="captionCopy" hidden onclick="copyText('captionOut')">Copy Caption</button>
+    </div>
 
-    <article class="card">
-      <div class="card-head"><div class="tool-icon">🚀</div><div><h2>Creator Tips</h2><p style="margin:2px 0">Small steps, better content</p></div></div>
-      <ul class="tip-list">
-        <li>Start your video with an interesting hook.</li>
-        <li>Use clear audio and readable text.</li>
-        <li>Post consistently at a pace you can maintain.</li>
-        <li>Learn what your audience enjoys.</li>
-      </ul>
-    </article>
+    <div class="card">
+      <h3>🚀 Creator Tips</h3>
+      <p>Get simple ideas to improve your creator journey.</p>
+      <button class="toolbtn" onclick="getTip()">Get a Creator Tip</button>
+      <div class="output" id="tipOut"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <h2>Create With Purpose</h2>
+  <p class="desc">Keep learning. Keep creating. Keep growing.</p>
+  <div class="tips">
+    <div class="tip"><b>✦ Stay Consistent</b><p>Choose a posting routine you can maintain.</p></div>
+    <div class="tip"><b>✦ Be Original</b><p>Learn from others while keeping your own style.</p></div>
+    <div class="tip"><b>✦ Keep Learning</b><p>Try new ideas and improve one step at a time.</p></div>
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="brand footer-brand">
-    <div class="logo">CreatorKit <span>India</span></div>
-    <div class="founder-label">FOUNDER &amp; CREATOR</div>
-    <div class="founder-name">Rama Raman Singh</div>
-    <div class="founder-tagline">CRAFTED WITH VISION ✦</div>
-  </div>
-  <p>Made for creators, one idea at a time.</p>
-  <p>© <span id="year"></span> CreatorKit India</p>
+  <div>CreatorKit India</div>
+  <div class="footname">Rama Raman Singh</div>
+  <div>FOUNDER &amp; CREATOR</div>
+  <div class="crafted">CRAFTED WITH VISION ✦</div>
+  <div style="margin-top:12px">Create something amazing.</div>
 </footer>
 
 <script>
-document.getElementById("year").textContent=new Date().getFullYear();
-function pick(items){return items[Math.floor(Math.random()*items.length)]}
-function showResult(id,text){
- const box=document.getElementById(id);
- box.replaceChildren();
- const output=document.createElement("div");
- output.textContent=text;
- box.appendChild(output);
- const copy=document.createElement("button");
- copy.className="copy-btn";
- copy.textContent="Copy result";
- copy.onclick=async()=>{
-   try{await navigator.clipboard.writeText(text);copy.textContent="Copied ✓"}
-   catch(e){copy.textContent="Select the text to copy"}
- };
- box.appendChild(copy);
- box.classList.add("show");
+function show(id,text,copyId){
+  const el=document.getElementById(id);
+  el.textContent=text;
+  el.style.display="block";
+  if(copyId)document.getElementById(copyId).hidden=false;
 }
-function generateBio(){
- const style=document.getElementById("bioStyle").value;
- const choices={
- attitude:["👑 Own vibe. Own rules. No comparison.","🔥 Silent moves, big dreams.","⚡ Less talk, more progress."],
- aesthetic:["☁️ Collecting moments, not things.","🌙 Soft heart, peaceful mind.","✨ Creating my own little universe."],
- simple:["😊 Just me, learning and growing.","🌱 One day at a time.","✨ Keeping life simple."],
- creator:["🎬 Creating, learning, repeating.","✨ Turning ideas into content.","📸 Sharing my world, one post at a time."]
- };
- showResult("bioResult",pick(choices[style]));
+function makeBio(){
+  const n=document.getElementById("bioName").value.trim()||"Your Name";
+  const s=document.getElementById("bioStyle").value;
+  const data={
+    Cool:`😎 ${n} | Own your vibe\n⚡ Real energy, original style\n✦ Making my own path`,
+    Aesthetic:`✦ ${n} ✦\n☁️ Collecting moments, creating dreams\n🌙 A little mystery, a lot of vision`,
+    Professional:`${n} | Creator\nBuilding ideas with purpose ✦\nLearning • Creating • Growing`,
+    Motivational:`${n} 🚀\nDream big. Keep moving.\n✨ Becoming better every day`
+  };
+  show("bioOut",data[s],"bioCopy");
 }
-function generateUsername(){
- const raw=document.getElementById("userWord").value.trim().toLowerCase().replace(/[^a-z0-9_]/g,"");
- if(!raw){showResult("userResult","First enter a name or keyword above.");return}
- const ideas=[raw+".vibes","its_"+raw,"the."+raw,raw+"_zone","real"+raw,raw+".x","hey_"+raw,raw+"_official","only."+raw,raw+"verse"];
- showResult("userResult",[...new Set(ideas)].join("\n"));
+function makeUsers(){
+  const n=(document.getElementById("userWord").value.trim()||"creator").replace(/\s+/g,"").replace(/[^a-zA-Z0-9_]/g,"");
+  show("userOut",[n+"_official","its_"+n,n+".creates","the_"+n,n+"_vibes","real_"+n,n+"_verse","hey_"+n,n+"._x","creator_"+n].join("\n"),"userCopy");
 }
-function generateCaption(){
- const style=document.getElementById("captionStyle").value;
- const choices={
- attitude:["My vibe speaks before I do. ⚡","No race, just my own pace. 👑","Quiet focus. Clear goals. 🔥"],
- happy:["Finding little reasons to smile. ☀️","Good energy, better memories. ✨","Today deserves a little happiness. 💛"],
- aesthetic:["A little moment, a lasting memory. 🌙","Somewhere between dreams and reality. ☁️","Golden light, peaceful mind. ✨"],
- motivation:["Small steps still move you forward. 🚀","Keep learning. Keep showing up. 💫","Progress over perfection. 🌱"]
+function makeCaption(){
+  const t=document.getElementById("topic").value.trim()||"life";
+  const s=document.getElementById("captionStyle").value;
+  const data={
+    Attitude:[`No competition, just ${t} and my own rules. 😎`,`Silent moves, strong vibes. ✦`,`I know my worth. The rest is noise.`],
+    Aesthetic:[`${t} moments, forever memories. ☁️`,`Somewhere between dreams and ${t}. 🌙`,`Soft moments. Big dreams. ✨`],
+    Funny:[`Came for ${t}, stayed for the snacks. 😂`,`Part-time ${t} expert, full-time overthinker. 😅`,`Mood: pretending I have a plan.`],
+    Motivational:[`One step closer to the ${t} I dream of. 🚀`,`Stay patient. Keep building. ✦`,`Small progress is still progress. 💜`]
+  };
+  show("captionOut",data[s].join("\n\n"),"captionCopy");
+}
+function getTip(){
+  const tips=[
+    "Start your videos with a clear hook to catch attention.",
+    "Post consistently at a pace that works for you.",
+    "Use clear captions and make content easy to understand on a phone.",
+    "Learn from your results and improve one thing at a time.",
+    "Make original content and respect other creators' work.",
+    "Reply kindly to genuine comments and learn what your audience enjoys."
+  ];
+  show("tipOut",tips[Math.floor(Math.random()*tips.length)]);
+}
+async function copyText(id){
+  const value=document.getElementById(id).textContent;
+  try{await navigator.clipboard.writeText(value);alert("Copied successfully!");}
+  catch(e){alert("Press and hold the text, then choose Copy.");}
+}
+</script>
+</body>
+</html>
+ 🚀","Keep learning. Keep showing up. 💫","Progress over perfection. 🌱"]
  };
  showResult("captionResult",pick(choices[style]));
 }
