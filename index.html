@@ -193,6 +193,30 @@ async function copyText(id){
 </script>
 </body>
 </html>
+or ${t}, stayed for the snacks. 😂`,`Part-time ${t} expert, full-time overthinker. 😅`,`Mood: pretending I have a plan.`],
+    Motivational:[`One step closer to the ${t} I dream of. 🚀`,`Stay patient. Keep building. ✦`,`Small progress is still progress. 💜`]
+  };
+  show("captionOut",data[s].join("\n\n"),"captionCopy");
+}
+function getTip(){
+  const tips=[
+    "Start your videos with a clear hook to catch attention.",
+    "Post consistently at a pace that works for you.",
+    "Use clear captions and make content easy to understand on a phone.",
+    "Learn from your results and improve one thing at a time.",
+    "Make original content and respect other creators' work.",
+    "Reply kindly to genuine comments and learn what your audience enjoys."
+  ];
+  show("tipOut",tips[Math.floor(Math.random()*tips.length)]);
+}
+async function copyText(id){
+  const value=document.getElementById(id).textContent;
+  try{await navigator.clipboard.writeText(value);alert("Copied successfully!");}
+  catch(e){alert("Press and hold the text, then choose Copy.");}
+}
+</script>
+</body>
+</html>
  🚀","Keep learning. Keep showing up. 💫","Progress over perfection. 🌱"]
  };
  showResult("captionResult",pick(choices[style]));
