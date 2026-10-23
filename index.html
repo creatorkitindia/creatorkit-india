@@ -1,1 +1,152 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CreatorKit India | Creator Tools</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#0b1020;color:#f8fafc}
+header{padding:22px 18px;border-bottom:1px solid #293047}
+.logo{font-size:24px;font-weight:800;color:#a78bfa}
+.logo span{color:#fff}
+header p{color:#aab3ca;font-size:14px}
+main{max-width:850px;margin:auto;padding:22px 16px}
+.hero{text-align:center;padding:35px 0}
+.hero h1{font-size:36px;margin:8px 0}
+.hero h1 span{color:#a78bfa}
+.hero p{color:#b6bfd4;line-height:1.6}
+.tag{color:#c4b5fd;font-size:12px;letter-spacing:2px}
+.tools{display:grid;grid-template-columns:1fr;gap:18px}
+.card{background:#141b30;border:1px solid #303a56;border-radius:18px;padding:20px}
+.card h2{font-size:20px;margin-top:0}
+.card p{font-size:14px;color:#b6bfd4;line-height:1.5}
+label{display:block;font-size:13px;margin:14px 0 7px;color:#dbe3f5}
+input,select,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #3a4562;background:#0b1020;color:white;font-size:15px}
+textarea{min-height:85px;resize:vertical}
+button{border:0;border-radius:10px;background:#8b5cf6;color:white;padding:12px 16px;font-weight:bold;font-size:15px;cursor:pointer;margin-top:13px;width:100%}
+button:active{opacity:.8}
+.output{margin-top:14px;padding:12px;border-radius:10px;background:#0b1020;border:1px solid #38415a;min-height:45px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.5}
+.copy{background:#26334f}
+footer{text-align:center;padding:30px 15px;color:#9ca8c3;font-size:13px}
+@media(min-width:650px){.tools{grid-template-columns:1fr 1fr}.hero h1{font-size:48px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Creator<span>Kit</span> India ✦</div>
+  <p>Simple tools for India's next generation of creators.</p>
+</header>
+<main>
+  <section class="hero">
+    <div class="tag">CREATE • INSPIRE • GROW</div>
+    <h1>Your Creator Journey<br><span>Starts Here.</span></h1>
+    <p>Make better bios, usernames and captions for your social media — free and easy.</p>
+  </section>
+
+  <section class="tools">
+    <div class="card">
+      <h2>✍️ Bio Generator</h2>
+      <p>Create a stylish bio for your social media profile.</p>
+      <label for="bioStyle">Choose your style</label>
+      <select id="bioStyle">
+        <option>Cool and aesthetic</option>
+        <option>Attitude</option>
+        <option>Simple and classy</option>
+        <option>Motivational</option>
+        <option>Funny</option>
+      </select>
+      <label for="bioName">Your name or nickname</label>
+      <input id="bioName" placeholder="Enter your name">
+      <button onclick="makeBio()">Generate Bio</button>
+      <div class="output" id="bioOut">Your bio will appear here.</div>
+      <button class="copy" onclick="copyText('bioOut')">Copy Bio</button>
+    </div>
+
+    <div class="card">
+      <h2>⚡ Username Ideas</h2>
+      <p>Find a username idea that matches your vibe.</p>
+      <label for="userWord">Your name or favourite word</label>
+      <input id="userWord" placeholder="e.g. Rahul, king, creator">
+      <button onclick="makeUser()">Generate Usernames</button>
+      <div class="output" id="userOut">Your username ideas will appear here.</div>
+      <button class="copy" onclick="copyText('userOut')">Copy Usernames</button>
+    </div>
+
+    <div class="card">
+      <h2>📸 Caption Generator</h2>
+      <p>Get caption ideas for your next post.</p>
+      <label for="capStyle">Post type</label>
+      <select id="capStyle">
+        <option>Selfie</option>
+        <option>Friends</option>
+        <option>Travel</option>
+        <option>Motivation</option>
+        <option>Attitude</option>
+      </select>
+      <button onclick="makeCaption()">Generate Captions</button>
+      <div class="output" id="capOut">Your captions will appear here.</div>
+      <button class="copy" onclick="copyText('capOut')">Copy Captions</button>
+    </div>
+
+    <div class="card">
+      <h2>🌟 Creator Tips</h2>
+      <p>Small steps that can help you grow online.</p>
+      <ul style="color:#d1d9ed;line-height:1.9;padding-left:20px">
+        <li>Post original content regularly.</li>
+        <li>Use clear photos and readable text.</li>
+        <li>Write captions that sound like you.</li>
+        <li>Never buy fake followers.</li>
+        <li>Protect your personal information.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer>Made with ❤️ in India · CreatorKit India</footer>
+
+<script>
+function makeBio(){
+ const n=document.getElementById('bioName').value.trim()||'Your Name';
+ const s=document.getElementById('bioStyle').value;
+ const options={
+ 'Cool and aesthetic':[`✦ ${n} | Creating my own vibe ✨`,`☁️ ${n}\nDream big • Stay real • Be you`,`𓆩 ${n} 𓆪 | Less perfection, more authenticity`],
+ 'Attitude':[`👑 ${n} | My life, my rules.`,`🔥 ${n} • Silent moves, loud results.`,`Not here to impress. Just here to be me. ⚡`],
+ 'Simple and classy':[` ${n} | Keep it simple 🤍`,`Growing every day 🌱 | ${n}`,`${n} • Good energy only ✨`],
+ 'Motivational':[`💫 ${n} | Dreams need action.`,`One step every day. One dream at a time. 🚀`,`Building my future, not excuses. | ${n}`],
+ 'Funny':[`Professional overthinker 😂 | ${n}`,`Part-time legend, full-time human 😎`,`Life's loading... please wait 😂 | ${n}`]
+ };
+ document.getElementById('bioOut').textContent=options[s].join('\n\n');
+}
+function makeUser(){
+ let n=document.getElementById('userWord').value.trim().toLowerCase().replace(/[^a-z0-9]/g,'')||'creator';
+ const suffix=['.vibes','_official','x','._','creates','.india','_07','daily'];
+ document.getElementById('userOut').textContent=suffix.map((s,i)=>n+s).join('\n');
+}
+function makeCaption(){
+ const s=document.getElementById('capStyle').value;
+ const options={
+ 'Selfie':['Just me, being me ✨','Confidence looks good on me. 😎','A little moment, a lasting memory. 📸'],
+ 'Friends':['Good friends, great memories ❤️','Together is our favourite place.','No caption needed when the squad is here 😂'],
+ 'Travel':['Collecting moments, not things. 🌍','Somewhere between lost and loving it.','New places, fresh perspectives ✈️'],
+ 'Motivation':['Work quietly. Let success speak. 🚀','Small progress is still progress.','Your only competition is who you were yesterday.'],
+ 'Attitude':['Energy speaks louder than words. ⚡','Know your worth. Always. 👑','Not everyone has to understand your journey.']
+ };
+ document.getElementById('capOut').textContent=options[s].join('\n\n');
+}
+function copyText(id){
+ const text=document.getElementById(id).textContent;
+ if(navigator.clipboard&&navigator.clipboard.writeText){
+  navigator.clipboard.writeText(text).then(()=>alert('Copied!')).catch(()=>fallbackCopy(text));
+ }else{fallbackCopy(text)}
+}
+function fallbackCopy(text){
+ const t=document.createElement('textarea');
+ t.value=text;document.body.appendChild(t);t.select();
+ try{document.execCommand('copy');alert('Copied!')}catch(e){alert('Please select and copy the text.')}
+ t.remove();
+}
+</script>
+</body>
+</html>
+
