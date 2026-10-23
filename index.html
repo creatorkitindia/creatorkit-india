@@ -5,290 +5,176 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#090711">
-<title>CreatorKit India | Creator Tools</title>
-<meta name="description" content="Free creator tools to generate Instagram bios, usernames and captions.">
+<title>CreatorKit India | Official Creator Tools</title>
+<meta name="description" content="Free creator tools for bios, usernames and captions by CreatorKit India.">
 <style>
-:root {
-  --bg:#090711;
-  --panel:#131020;
-  --purple:#a855f7;
-  --pink:#ec4899;
-  --text:#f8f7ff;
-  --muted:#aaa5bd;
-  --border:#302542;
-}
-* { box-sizing:border-box; }
-html { scroll-behavior:smooth; }
-body {
-  margin:0;
-  background:radial-gradient(ellipse at top,#24113c 0%,var(--bg) 48%);
-  color:var(--text);
-  font-family:system-ui,-apple-system,Arial,sans-serif;
-  line-height:1.6;
-}
-.container { width:min(100% - 32px,900px);margin:auto; }
-header {
-  position:sticky;top:0;z-index:5;
-  background:#090711eF;
-  border-bottom:1px solid var(--border);
-  backdrop-filter:blur(14px);
-}
-.nav {
-  min-height:68px;display:flex;align-items:center;
-  justify-content:space-between;gap:12px;
-}
-.logo { font-size:19px;font-weight:850;letter-spacing:-.5px; }
-.logo span {
-  background:linear-gradient(90deg,#c084fc,#f0abfc);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
-.nav a { color:var(--muted);text-decoration:none;font-size:13px; }
-.hero { text-align:center;padding:66px 0 38px; }
-.tag {
-  display:inline-block;padding:5px 12px;border-radius:99px;
-  border:1px solid #674095;background:#a855f71b;
-  color:#d8b4fe;font-size:12px;font-weight:700;
-}
-h1 {
-  font-size:clamp(35px,8vw,60px);line-height:1.08;
-  letter-spacing:-2px;margin:20px 0 15px;
-}
-.gradient {
-  background:linear-gradient(90deg,#c084fc,#f0abfc,#fb7185);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
-.hero p { max-width:530px;margin:0 auto;color:var(--muted);font-size:15px; }
-.section-title { margin:28px 0 6px;font-size:23px;letter-spacing:-.5px; }
-.section-sub { color:var(--muted);font-size:14px;margin:0 0 20px; }
-.tools { display:grid;grid-template-columns:1fr;gap:16px;padding-bottom:50px; }
-.card {
-  background:linear-gradient(145deg,#191328,#100d1a);
-  border:1px solid var(--border);border-radius:20px;padding:21px;
-  box-shadow:0 10px 35px #0002;
-  transition:transform .2s,border-color .2s;
-}
-.card:focus-within,.card:hover { border-color:#8950b9; }
-.card-head { display:flex;align-items:center;gap:12px;margin-bottom:13px; }
-.tool-icon {
-  width:45px;height:45px;display:grid;place-items:center;
-  border-radius:14px;background:#a855f71b;font-size:23px;
-}
-h2 { font-size:19px;margin:0; }
-.card p { color:var(--muted);font-size:13px;margin:3px 0 15px; }
-label { display:block;font-size:13px;color:#ddd5ed;margin:12px 0 6px; }
-input,select,textarea {
-  width:100%;padding:13px 14px;border:1px solid #3a2d4e;
-  border-radius:12px;background:#0c0a13;color:var(--text);
-  font:inherit;font-size:14px;outline:none;
-}
-input:focus,select:focus,textarea:focus { border-color:var(--purple); }
-textarea { min-height:84px;resize:vertical; }
-button {
-  border:0;border-radius:12px;padding:12px 16px;
-  background:linear-gradient(100deg,#9333ea,#c026d3);
-  color:white;font-size:14px;font-weight:750;cursor:pointer;
-  box-shadow:0 0 18px #a855f733;
-}
-button:active { transform:scale(.98); }
-.generate { width:100%;margin-top:12px; }
-.secondary { background:#282035;box-shadow:none;border:1px solid #49385f; }
-.result {
-  display:none;margin-top:14px;padding:14px;border-radius:12px;
-  background:#090711;border:1px solid #49385f;
-  overflow-wrap:anywhere;font-size:14px;
-}
-.result.show { display:block; }
-.result button { margin-top:10px; }
-.tip-list { padding-left:19px;color:#d4cde1;font-size:14px; }
-.tip-list li { margin:9px 0; }
-footer {
-  text-align:center;padding:25px 16px 35px;
-  border-top:1px solid var(--border);color:var(--muted);font-size:12px;
-}
-@media(min-width:650px) {
-  .tools { grid-template-columns:repeat(2,minmax(0,1fr)); }
-  .hero { padding-top:85px; }
-}
+:root{--bg:#090711;--panel:#151020;--purple:#b76cff;--pink:#ed75ff;--text:#faf7ff;--muted:#b2a7c3;--border:#342447}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at top,#291344 0%,var(--bg) 48%);color:var(--text);font-family:system-ui,-apple-system,Arial,sans-serif;line-height:1.6}
+.container{width:min(100% - 32px,960px);margin:auto}
+header{position:sticky;top:0;z-index:5;background:#090711ed;border-bottom:1px solid var(--border);backdrop-filter:blur(14px)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;flex-direction:column;line-height:1.25}
+.logo{font-size:20px;font-weight:850;letter-spacing:-.6px}
+.logo span{background:linear-gradient(90deg,#c084fc,#f0abfc);-webkit-background-clip:text;background-clip:text;color:transparent}
+.founder-label{margin-top:6px;color:#c084fc;font-size:8px;font-weight:800;letter-spacing:2px}
+.founder-name{margin-top:2px;font-family:Georgia,"Times New Roman",serif;font-size:14px;font-weight:600;letter-spacing:.5px;background:linear-gradient(90deg,#fff0ce,#d8b4fe);-webkit-background-clip:text;background-clip:text;color:transparent}
+.founder-tagline{margin-top:3px;color:#91859f;font-size:8px;letter-spacing:1.4px}
+.nav-link{font-size:12px;color:#e0c9ff;text-decoration:none;border:1px solid #49305f;border-radius:99px;padding:8px 11px}
+.hero{text-align:center;padding:65px 0 40px}
+.tag{display:inline-block;padding:6px 12px;border:1px solid #674095;background:#a855f71b;color:#e0c2ff;border-radius:99px;font-size:11px;font-weight:750;letter-spacing:.6px}
+h1{font-size:clamp(38px,9vw,68px);line-height:1.06;letter-spacing:-2px;margin:22px 0 16px}
+.gradient{background:linear-gradient(90deg,#c084fc,#f0abfc,#fb7185);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:540px;margin:0 auto;color:var(--muted);font-size:15px}
+button{border:0;border-radius:12px;padding:12px 16px;background:linear-gradient(100deg,#9333ea,#c026d3);color:white;font-size:14px;font-weight:750;cursor:pointer;box-shadow:0 0 20px #a855f744}
+button:active{transform:scale(.98)}
+.hero-btn{display:inline-block;text-decoration:none;margin-top:25px}
+.section-title{font-size:24px;letter-spacing:-.5px;margin:24px 0 5px}
+.section-sub{color:var(--muted);font-size:14px;margin:0 0 20px}
+.tools{display:grid;grid-template-columns:1fr;gap:16px;padding-bottom:48px}
+.card{background:linear-gradient(145deg,#1b1429,#100d19);border:1px solid var(--border);border-radius:20px;padding:21px;box-shadow:0 10px 35px #0003}
+.card:focus-within,.card:hover{border-color:#8950b9}
+.card-head{display:flex;align-items:center;gap:12px;margin-bottom:13px}
+.tool-icon{width:46px;height:46px;flex-shrink:0;display:grid;place-items:center;border-radius:14px;background:#a855f71c;font-size:23px}
+h2{font-size:19px;margin:0}
+.card p{color:var(--muted);font-size:13px;margin:3px 0 15px}
+label{display:block;font-size:13px;color:#ddd5ed;margin:12px 0 6px}
+input,select{width:100%;padding:13px 14px;border:1px solid #3a2d4e;border-radius:12px;background:#0c0a13;color:var(--text);font:inherit;font-size:14px;outline:none}
+input:focus,select:focus{border-color:var(--purple)}
+.generate{width:100%;margin-top:13px}
+.result{display:none;margin-top:14px;padding:14px;border-radius:12px;background:#090711;border:1px solid #49385f;overflow-wrap:anywhere;white-space:pre-line;font-size:14px}
+.result.show{display:block}
+.copy-btn{margin-top:12px;background:#282035;border:1px solid #49385f;box-shadow:none}
+.tip-list{padding-left:20px;color:#d4cde1;font-size:14px}
+.tip-list li{margin:10px 0}
+footer{text-align:center;padding:28px 16px 35px;border-top:1px solid var(--border);color:var(--muted);font-size:12px}
+.footer-brand{align-items:center}
+@media(min-width:650px){.tools{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding-top:85px}.logo{font-size:23px}}
 </style>
 </head>
 <body>
 <header>
-  <div class="container nav">
+<div class="container nav">
+  <div class="brand">
     <div class="logo">CreatorKit <span>India</span></div>
-    <a href="#tools">Explore tools ↓</a>
+    <div class="founder-label">FOUNDER &amp; CREATOR</div>
+    <div class="founder-name">Rama Raman Singh</div>
+    <div class="founder-tagline">CRAFTED WITH VISION ✦</div>
   </div>
+  <a class="nav-link" href="#tools">Explore Tools ↓</a>
+</div>
 </header>
 
 <main class="container">
-  <section class="hero">
-    <span class="tag">✦ FREE TOOLS FOR CREATORS</span>
-    <h1>Create more.<br><span class="gradient">Stand out.</span></h1>
-    <p>Make your creator profile shine with stylish bios, unique usernames and captions — all in one place.</p>
-    <div style="margin-top:24px">
-      <a href="#tools" style="display:inline-block;text-decoration:none">
-        <button>Explore Free Tools ↗</button>
-      </a>
-    </div>
-  </section>
+<section class="hero">
+  <span class="tag">✦ FREE TOOLS FOR CREATORS</span>
+  <h1>Create more.<br><span class="gradient">Stand out.</span></h1>
+  <p>Make your creator profile shine with stylish bios, unique usernames and captions — all in one place.</p>
+  <a class="hero-btn" href="#tools"><button type="button">Explore Free Tools ↗</button></a>
+</section>
 
-  <section id="tools">
-    <h2 class="section-title">Your creator toolkit ✨</h2>
-    <p class="section-sub">Simple, free tools to spark your next idea.</p>
+<section id="tools">
+  <h2 class="section-title">Your Creator Toolkit ✨</h2>
+  <p class="section-sub">Simple, free tools to spark your next idea.</p>
+  <div class="tools">
+    <article class="card">
+      <div class="card-head"><div class="tool-icon">✍️</div><div><h2>Bio Generator</h2><p style="margin:2px 0">Find your profile vibe</p></div></div>
+      <label for="bioStyle">Choose your style</label>
+      <select id="bioStyle"><option value="attitude">Attitude</option><option value="aesthetic">Aesthetic</option><option value="simple">Simple</option><option value="creator">Content Creator</option></select>
+      <button class="generate" onclick="generateBio()">Generate Bio ✨</button>
+      <div class="result" id="bioResult" aria-live="polite"></div>
+    </article>
 
-    <div class="tools">
-      <article class="card">
-        <div class="card-head">
-          <div class="tool-icon">✍️</div>
-          <div><h2>Bio Generator</h2><p style="margin:2px 0">Find your profile vibe</p></div>
-        </div>
-        <label for="bioStyle">Choose a style</label>
-        <select id="bioStyle">
-          <option value="attitude">Attitude</option>
-          <option value="aesthetic">Aesthetic</option>
-          <option value="simple">Simple</option>
-          <option value="creator">Content Creator</option>
-        </select>
-        <button class="generate" onclick="generateBio()">Generate Bio ✨</button>
-        <div class="result" id="bioResult" aria-live="polite"></div>
-      </article>
+    <article class="card">
+      <div class="card-head"><div class="tool-icon">⚡</div><div><h2>Username Ideas</h2><p style="margin:2px 0">Find your next handle</p></div></div>
+      <label for="userWord">Name or keyword</label>
+      <input id="userWord" maxlength="24" placeholder="e.g. Rama, gamer, artist">
+      <button class="generate" onclick="generateUsername()">Generate Usernames ✨</button>
+      <div class="result" id="userResult" aria-live="polite"></div>
+    </article>
 
-      <article class="card">
-        <div class="card-head">
-          <div class="tool-icon">⚡</div>
-          <div><h2>Username Ideas</h2><p style="margin:2px 0">Discover your next handle</p></div>
-        </div>
-        <label for="userWord">Your name or keyword</label>
-        <input id="userWord" maxlength="24" placeholder="e.g. Rahul, gamer, artist">
-        <button class="generate" onclick="generateUsername()">Generate Usernames ✨</button>
-        <div class="result" id="userResult" aria-live="polite"></div>
-      </article>
+    <article class="card">
+      <div class="card-head"><div class="tool-icon">💬</div><div><h2>Caption Generator</h2><p style="margin:2px 0">Give your post a voice</p></div></div>
+      <label for="captionStyle">Choose a mood</label>
+      <select id="captionStyle"><option value="attitude">Attitude</option><option value="happy">Positive vibes</option><option value="aesthetic">Aesthetic</option><option value="motivation">Motivation</option></select>
+      <button class="generate" onclick="generateCaption()">Generate Caption ✨</button>
+      <div class="result" id="captionResult" aria-live="polite"></div>
+    </article>
 
-      <article class="card">
-        <div class="card-head">
-          <div class="tool-icon">💬</div>
-          <div><h2>Caption Generator</h2><p style="margin:2px 0">Give your post a voice</p></div>
-        </div>
-        <label for="captionStyle">Caption mood</label>
-        <select id="captionStyle">
-          <option value="attitude">Attitude</option>
-          <option value="happy">Positive vibes</option>
-          <option value="aesthetic">Aesthetic</option>
-          <option value="motivation">Motivation</option>
-        </select>
-        <button class="generate" onclick="generateCaption()">Generate Caption ✨</button>
-        <div class="result" id="captionResult" aria-live="polite"></div>
-      </article>
-
-      <article class="card">
-        <div class="card-head">
-          <div class="tool-icon">🚀</div>
-          <div><h2>Creator Tips</h2><p style="margin:2px 0">Small steps, better content</p></div>
-        </div>
-        <ul class="tip-list">
-          <li>Start videos with a clear hook.</li>
-          <li>Use readable text and clear audio.</li>
-          <li>Post consistently at a pace you can maintain.</li>
-          <li>Study what your audience enjoys.</li>
-        </ul>
-      </article>
-    </div>
-  </section>
+    <article class="card">
+      <div class="card-head"><div class="tool-icon">🚀</div><div><h2>Creator Tips</h2><p style="margin:2px 0">Small steps, better content</p></div></div>
+      <ul class="tip-list">
+        <li>Start your video with an interesting hook.</li>
+        <li>Use clear audio and readable text.</li>
+        <li>Post consistently at a pace you can maintain.</li>
+        <li>Learn what your audience enjoys.</li>
+      </ul>
+    </article>
+  </div>
+</section>
 </main>
 
 <footer>
-  <div class="logo">CreatorKit <span>India</span></div>
+  <div class="brand footer-brand">
+    <div class="logo">CreatorKit <span>India</span></div>
+    <div class="founder-label">FOUNDER &amp; CREATOR</div>
+    <div class="founder-name">Rama Raman Singh</div>
+    <div class="founder-tagline">CRAFTED WITH VISION ✦</div>
+  </div>
   <p>Made for creators, one idea at a time.</p>
   <p>© <span id="year"></span> CreatorKit India</p>
 </footer>
 
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
-
-function showResult(id, text) {
-  const box = document.getElementById(id);
-  box.replaceChildren();
-  const output = document.createElement("div");
-  output.textContent = text;
-  box.appendChild(output);
-  const copy = document.createElement("button");
-  copy.className = "secondary";
-  copy.textContent = "Copy result";
-  copy.onclick = async () => {
-    try {
-      await navigator.clipboard.writeText(text);
-      copy.textContent = "Copied ✓";
-    } catch {
-      const range = document.createRange();
-      range.selectNodeContents(output);
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-      copy.textContent = "Select text and copy";
-    }
-  };
-  box.appendChild(copy);
-  box.classList.add("show");
+document.getElementById("year").textContent=new Date().getFullYear();
+function pick(items){return items[Math.floor(Math.random()*items.length)]}
+function showResult(id,text){
+ const box=document.getElementById(id);
+ box.replaceChildren();
+ const output=document.createElement("div");
+ output.textContent=text;
+ box.appendChild(output);
+ const copy=document.createElement("button");
+ copy.className="copy-btn";
+ copy.textContent="Copy result";
+ copy.onclick=async()=>{
+   try{await navigator.clipboard.writeText(text);copy.textContent="Copied ✓"}
+   catch(e){copy.textContent="Select the text to copy"}
+ };
+ box.appendChild(copy);
+ box.classList.add("show");
 }
-
-function pick(items) {
-  return items[Math.floor(Math.random() * items.length)];
+function generateBio(){
+ const style=document.getElementById("bioStyle").value;
+ const choices={
+ attitude:["👑 Own vibe. Own rules. No comparison.","🔥 Silent moves, big dreams.","⚡ Less talk, more progress."],
+ aesthetic:["☁️ Collecting moments, not things.","🌙 Soft heart, peaceful mind.","✨ Creating my own little universe."],
+ simple:["😊 Just me, learning and growing.","🌱 One day at a time.","✨ Keeping life simple."],
+ creator:["🎬 Creating, learning, repeating.","✨ Turning ideas into content.","📸 Sharing my world, one post at a time."]
+ };
+ showResult("bioResult",pick(choices[style]));
 }
-
-function generateBio() {
-  const style = document.getElementById("bioStyle").value;
-  const choices = {
-    attitude: [
-      "👑 Built different | Silent moves, big dreams.",
-      "🔥 Own vibe. Own rules. No comparison.",
-      "⚡ Less talk, more progress."
-    ],
-    aesthetic: [
-      "☁️ Collecting moments, not things.",
-      "🌙 Soft heart, peaceful mind.",
-      "✨ Creating my own little universe."
-    ],
-    simple: [
-      "😊 Just me, learning and growing.",
-      "🌱 One day at a time.",
-      "✨ Keeping life simple."
-    ],
-    creator: [
-      "🎬 Creating, learning, repeating.",
-      "✨ Ideas into content | Join the journey.",
-      "📸 Sharing my world, one post at a time."
-    ]
-  };
-  showResult("bioResult", pick(choices[style]));
+function generateUsername(){
+ const raw=document.getElementById("userWord").value.trim().toLowerCase().replace(/[^a-z0-9_]/g,"");
+ if(!raw){showResult("userResult","First enter a name or keyword above.");return}
+ const ideas=[raw+".vibes","its_"+raw,"the."+raw,raw+"_zone","real"+raw,raw+".x","hey_"+raw,raw+"_official","only."+raw,raw+"verse"];
+ showResult("userResult",[...new Set(ideas)].join("\n"));
 }
-
-function generateUsername() {
-  const raw = document.getElementById("userWord").value.trim()
-    .toLowerCase().replace(/[^a-z0-9_]/g, "");
-  if (!raw) {
-    showResult("userResult", "First enter a name or keyword above.");
-    return;
-  }
-  const ideas = [
-    raw + ".vibes", "its_" + raw, "the." + raw,
-    raw + "_zone", "real" + raw, raw + ".x",
-    "hey_" + raw, raw + "_official", "only." + raw,
-    raw + "verse"
-  ];
-  showResult("userResult", [...new Set(ideas)].join("\n"));
+function generateCaption(){
+ const style=document.getElementById("captionStyle").value;
+ const choices={
+ attitude:["My vibe speaks before I do. ⚡","No race, just my own pace. 👑","Quiet focus. Clear goals. 🔥"],
+ happy:["Finding little reasons to smile. ☀️","Good energy, better memories. ✨","Today deserves a little happiness. 💛"],
+ aesthetic:["A little moment, a lasting memory. 🌙","Somewhere between dreams and reality. ☁️","Golden light, peaceful mind. ✨"],
+ motivation:["Small steps still move you forward. 🚀","Keep learning. Keep showing up. 💫","Progress over perfection. 🌱"]
+ };
+ showResult("captionResult",pick(choices[style]));
 }
-
-function generateCaption() {
-  const style = document.getElementById("captionStyle").value;
-  const choices = {
-    attitude: [
-      "My vibe speaks before I do. ⚡",
-      "No race, just my own pace. 👑",
-      "Quiet focus. Clear goals. 🔥"
-    ],
-    happy: [
-      "Finding little reasons to smile. ☀️",
-      "Good energy, better memories. ✨",
-      "Today deserves a little happiness. 💛"
+</script>
+</body>
+</html>
+  "Today deserves a little happiness. 💛"
     ],
     aesthetic: [
       "A little moment, a lasting memory. 🌙",
